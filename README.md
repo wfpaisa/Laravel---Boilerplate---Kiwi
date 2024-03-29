@@ -6,6 +6,7 @@ Packages
 -   Tailwind
 -   Blueprint
 -   Filament
+-   Vs Code config
 
 Instalación y preparación de desarrollo.
 
