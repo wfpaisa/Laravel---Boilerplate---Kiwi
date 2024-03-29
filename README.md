@@ -43,6 +43,13 @@ $ sail php artisan migrate:refresh --seed
 $ sail php artisan make:filament-resource User --generate
 ```
 
-## Livewire / inertiajs ?
+## Livewire
+
+```sh
+$ sail composer require livewire/livewire
+$ sail composer require livewire/volt
+$ sail php artisan volt:install
+$ sail php artisan livewire:layout
+```
 
 ## Language?
