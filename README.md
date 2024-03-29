@@ -30,7 +30,7 @@ $ sail php artisan filament:install --panels
 
 ```
 
-Seed user admin demo:
+## Seed user admin demo:
 
 ```sh
 $ sail php artisan migrate:refresh --seed
@@ -43,4 +43,6 @@ $ sail php artisan migrate:refresh --seed
 $ sail php artisan make:filament-resource User --generate
 ```
 
-# Language?
+## Livewire / inertiajs ?
+
+## Language?
