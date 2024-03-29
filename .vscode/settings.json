@@ -1,0 +1,15 @@
+{
+    // "php.validate.executablePath": "/home/projects/laravel/banano/php",
+    "php.suggest.basic": false,
+    "emmet.triggerExpansionOnTab": true, // enable tab to expanse emmet tags
+    "blade.format.enable": true, // if you would like to enable blade format
+    "tailwindCSS.includeLanguages": {
+        "plaintext": "blade"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
+    // "emmet.includeLanguages": {
+    //     "blade": "html",
+    // },
+}

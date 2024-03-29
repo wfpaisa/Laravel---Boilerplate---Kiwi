@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "shufo.vscode-blade-formatter",
+        "cjhowe7.laravel-blade",
+        "bradlc.vscode-tailwindcss",
+        "onecentlin.laravel-blade",
+        "dbaeumer.vscode-eslint",
+        "cierra.livewire-vscode",
+        "bmewburn.vscode-intelephense-client",
+        "esbenp.prettier-vscode"
+    ]
+}
