@@ -4,7 +4,7 @@ Packages
 
 -   Git
 -   Tailwind
--
+-   Blueprint
 
 Instalación y preparación de desarrollo.
 
@@ -19,7 +19,9 @@ $ git init && git add . && git commit -m 'init'
 # Use the guide: https://tailwindcss.com/docs/guides/laravel#vite
 # with sail... example: sail npm install -D tailwindcss postcss autoprefixer
 
-# 4.
+# 4. Blueprint
+$ sail composer require -W --dev laravel-shift/blueprint
+
 ```
 
 # Language?
