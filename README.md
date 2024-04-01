@@ -11,29 +11,32 @@ $ docker-compose up -d
 #    - Ver nombres de contenedores con: docker ps -a  (el que tenga un nombre de contenedor con la palabra laravel)
 #    - Esto generara la carpeta vendors
 $ docker exec Laravel-Boilerplate-Kiwi-laravel.test-1 composer install
-$ docker-compose down
 
-# De aqui en aldelante para iniciar los contenedores usar
-$ sail up -d
+# Bajar contenedores y volumenes importante, de lo contrario
+# puede generar problemas de permisos en directorios
+$ docker-compose down -v
 
 # Copiar los enviroments
 # Nota:
 #    - El archivo .env generado se puede cambiar segun sus preferencias
 $ cp .env.example .env
 
-
-# Para trabajar con vite
-$ sail npm i
-$ sail npm run dev
-
-# Para compilar vite
-$ sail npm run build
+# De aqui en aldelante para iniciar los contenedores usar
+# en el navegador se puede ver en http://localhost
+$ sail up -d
 
 # Expone los archivos de solo para docker
 $ sail php artisan storage:link
 
 # Migraciones de bases de datos
-$ sail php artisan migrate:refresh --seed
+$ sail php artisan migrate:fresh --seed
+
+# Iniciar proyecto npm
+$ sail npm i
+$ sail npm run build
+
+# Opcional Para trabajar con vite
+$ sail npm run dev
 
 # Optional generate users panel
 $ sail php artisan make:filament-resource User --generate
