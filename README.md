@@ -3,6 +3,12 @@
 ## Despues de clonar el repo que hacer:
 
 ```sh
+# Para trabajar con vite
+$ sail npm run dev
+
+# Para compilar vite
+$ sail npm run build
+
 # Expone los archivos de solo para docker
 $ sail php artisan storage:link
 
