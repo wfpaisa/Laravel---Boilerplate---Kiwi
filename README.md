@@ -12,6 +12,10 @@ $ docker-compose up -d
 #    - Esto generara la carpeta vendors
 $ docker exec Laravel-Boilerplate-Kiwi-laravel.test-1 composer install
 
+# Copiar los enviroments
+$ cp .env.example .env
+# el archivo .env generado se puede cambiar segun sus preferencias
+
 # Para trabajar con vite
 $ sail npm run dev
 
