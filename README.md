@@ -22,7 +22,6 @@ $ docker-compose down -v
 $ cp .env.example .env
 
 # De aqui en aldelante para iniciar los contenedores usar
-# en el navegador se puede ver en http://localhost
 $ sail up -d
 
 # Expone los archivos de solo para docker
@@ -35,6 +34,8 @@ $ sail php artisan migrate:fresh --seed
 $ sail npm i
 $ sail npm run build
 
+# En el navegador se puede ver en http://localhost
+
 # Opcional Para trabajar con vite
 $ sail npm run dev
 
@@ -42,11 +43,17 @@ $ sail npm run dev
 $ sail php artisan make:filament-resource User --generate
 ```
 
-Login con el usuario: (database/seeders/DatabaseSeeder.php) es necesario haber corrido las migraciones y el seed:
+### Panel admin
+
+Entrar con la url: http://localhost/panel-admin
 
 -   name : Kiwi admin
 -   email : kiwi@admin.com
 -   password : kiwipass
+
+Nota:
+Para el login con el usuario es necesario haber corrido las migraciones y el seed.
+(database/seeders/DatabaseSeeder.php) contiene los datos del usario.
 
 ## Que tiene instalado:
 
