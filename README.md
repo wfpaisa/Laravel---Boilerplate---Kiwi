@@ -3,6 +3,15 @@
 ## Despues de clonar el repo que hacer:
 
 ```sh
+# Iniciar contenedores de docker
+$ docker-compose up -d
+
+# Remplazar [Laravel-Boilerplate-Kiwi-laravel.test-1] por el nombre del contenedor
+# Nota:
+#    - Ver nombres de contenedores con: docker ps -a  (el que tenga un nombre de contenedor con la palabra laravel)
+#    - Esto generara la carpeta vendors
+$ docker exec Laravel-Boilerplate-Kiwi-laravel.test-1 composer install
+
 # Para trabajar con vite
 $ sail npm run dev
 
@@ -14,7 +23,6 @@ $ sail php artisan storage:link
 
 # Migraciones de bases de datos
 $ sail php artisan migrate:refresh --seed
-
 
 # Optional generate users panel
 $ sail php artisan make:filament-resource User --generate
