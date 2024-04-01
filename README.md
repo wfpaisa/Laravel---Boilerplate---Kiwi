@@ -46,11 +46,9 @@ $ git init && git add . && git commit -m 'init'
 # 4. Blueprint
 $ sail composer require -W --dev laravel-shift/blueprint
 
-
 # 5. Filament
 $ sail composer require filament/filament:"^3.2" -W
 $ sail php artisan filament:install --panels
-
 ```
 
 ## Livewire / inertiajs ?
