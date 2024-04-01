@@ -1,5 +1,27 @@
 # Laravel boilerplate - Kiwi
 
+## Despues de clonar el repo que hacer:
+
+```sh
+# Expone los archivos de solo para docker
+$ sail php artisan storage:link
+
+# Migraciones de bases de datos
+$ sail php artisan migrate:refresh --seed
+
+
+# Optional generate users panel
+$ sail php artisan make:filament-resource User --generate
+```
+
+Login con el usuario: (database/seeders/DatabaseSeeder.php) es necesario haber corrido las migraciones y el seed:
+
+-   name : Kiwi admin
+-   email : kiwi@admin.com
+-   password : kiwipass
+
+## Que tiene instalado:
+
 Packages
 
 -   Git
@@ -8,7 +30,7 @@ Packages
 -   Filament
 -   Vs Code config
 
-Instalación y preparación de desarrollo.
+Comandos:
 
 ```bash
 # 1. Init laravel docker
@@ -29,19 +51,6 @@ $ sail composer require -W --dev laravel-shift/blueprint
 $ sail composer require filament/filament:"^3.2" -W
 $ sail php artisan filament:install --panels
 
-```
-
-## Seed user admin demo:
-
-```sh
-$ sail php artisan migrate:refresh --seed
-
-# name : Kiwi admin
-# email : kiwi@admin.com
-# password : kiwipass
-
-# Optional generate users panel
-$ sail php artisan make:filament-resource User --generate
 ```
 
 ## Livewire / inertiajs ?
