@@ -13,8 +13,10 @@ $ docker-compose up -d
 $ docker exec Laravel-Boilerplate-Kiwi-laravel.test-1 composer install
 
 # Copiar los enviroments
+# Nota:
+#    - El archivo .env generado se puede cambiar segun sus preferencias
 $ cp .env.example .env
-# el archivo .env generado se puede cambiar segun sus preferencias
+
 
 # Para trabajar con vite
 $ sail npm run dev
