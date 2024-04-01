@@ -11,6 +11,10 @@ $ docker-compose up -d
 #    - Ver nombres de contenedores con: docker ps -a  (el que tenga un nombre de contenedor con la palabra laravel)
 #    - Esto generara la carpeta vendors
 $ docker exec Laravel-Boilerplate-Kiwi-laravel.test-1 composer install
+$ docker-compose down
+
+# De aqui en aldelante para iniciar los contenedores usar
+$ sail up -d
 
 # Copiar los enviroments
 # Nota:
