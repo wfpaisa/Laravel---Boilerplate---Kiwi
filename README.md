@@ -19,6 +19,7 @@ $ cp .env.example .env
 
 
 # Para trabajar con vite
+$ sail npm i
 $ sail npm run dev
 
 # Para compilar vite
