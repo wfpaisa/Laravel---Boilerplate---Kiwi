@@ -41,6 +41,10 @@ $ sail npm run dev
 
 # Optional generate users panel
 $ sail php artisan make:filament-resource User --generate
+
+# Opcional vscode, deshabilitar la extension por defecto de php
+# buscar en extensiones: @builtin php
+# y la deshablitar exteción llamada: PHP Language Features
 ```
 
 ### Panel admin
