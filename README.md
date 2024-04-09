@@ -24,7 +24,7 @@ $ cp .env.example .env
 # De aqui en aldelante para iniciar los contenedores usar
 $ sail up -d
 
-# Expone los archivos de solo para docker
+# Expone los archivos en docker, esto permite que se puedan ver los archivos por laravel
 $ sail php artisan storage:link
 
 # Migraciones de bases de datos
