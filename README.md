@@ -16,6 +16,9 @@ $ docker exec Laravel-Boilerplate-Kiwi-laravel.test-1 composer install
 # puede generar problemas de permisos en directorios
 $ docker-compose down -v
 
+# Cambiar los permisos del directorio vendor de root al usuario actual
+$ sudo chown -R ${USER}:${USER} ./vendor
+
 # Copiar los enviroments
 # Nota:
 #    - El archivo .env generado se puede cambiar segun sus preferencias
@@ -25,12 +28,14 @@ $ cp .env.example .env
 $ sail up -d
 
 # Expone los archivos en docker, esto permite que se puedan ver los archivos por laravel
+# Eliminar el archivo public/storage
 $ sail php artisan storage:link
 
 # Migraciones de bases de datos
 $ sail php artisan migrate:fresh --seed
 
 # Iniciar proyecto npm
+# Eliminar la carpeta node_modules si existe
 $ sail npm i
 $ sail npm run build
 
